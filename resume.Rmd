@@ -1,0 +1,64 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+# Education
+
+* Columbia University (2021 - )
+  * Master of Science in Biostatistics, Statistical Genetics track
+
+* Purdue University  (2017 - 2021)
+  * Bachelor of Science in Chemistry ACS (American Chemistry Society)
+  * Minor in Mathematics
+
+
+# Professonal Experience
+* Shanghai Topgen Biopharm Company Limited (Shanghai China)
+  * Intern of Bioinformatics Department (Aug.- Nov. 2020)
+  * Analyze and visualize genetic data for cancer patients using Python
+    * Extract and separated data from Next Generation Sequencing (NGS) based on various gene panels
+    * Create interactive plots for visualization and produce reports to each patient 
+
+
+# Research Experience (Data Analysis)
+* Data Analytics Online Research Program at Stanford University
+  * Research Assistant (Jul 2020)
+  * Performed image denoising using Python Skimage and Matplotlib
+  * Applied PCA(Principal Components Analysis) to fundus photos & classify glaucoma images with KNN using Sklearn
+  * Implemented simple CNN model using Keras for glaucoma analysis
+  
+* Yuk Ling Yung Group’s Carbon Dioxide Extraction Lab at Caltech
+  * Research Assistant (Jun 2016 - Jun 2017)
+  * Extracted CO2 from air samples collected from LA area (three times a week)
+  * Employed Python to plot graphs of CO2 concentration vs. various factors such as temperature, humidity, wind direction
+
+# Research Experience (Chemistry)
+
+* Hilkka Kenttamma's Group at Purdue University
+  * Research Assistant (Jan 2020 - May 2020)
+  * Operated Linear Quadrupole Ion Trap (LTQ) mass spectrometer that uses ESI/APCI for ion generation
+  * Synthesized various organic molecules for mass spectrometer analysis 
+  * Planned to investigate the possible pharmaceutical applications of aromatic hydroxylamines (suspended due to the pendamic)
+
+* Christopher Uyeda's Group at Purdue University
+  * Research Assistant (Oct 2018 - Dec 2019)
+  * Conducted multi-step catalytic reactions individually on both large scales and small scales
+  * Synthesized organic molecules applied to medicine, using rotovap, columns, TLC, glove box, etc.
+  * Identified compounds by operating 300 Hz/400Hz NMR, and purified compounds 
+  
+
+# Skills
+* Programming Skills: Python, Java, R
+* Lab Skills: Trained in 300 MHz Varian NMR, 400 MHz Brucker NMR, Column Chromatography, Glove box, Thin Layer Chromatography, LTQ Mass Spectrometer, HPLC, IR and Rotovap
+* Languages: Mandarin, Cantonese, English
+
+
+
+
+
+
