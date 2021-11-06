@@ -8,9 +8,11 @@ output:
 
 Welcome to Lesi He's Zone!
 
+
+
 # Introduction
 Hello! I am Lesi He. Welcome again to my website!
-Let me introduce myself briefly: Born in Guangzhou, China, I can speak both Mandarin and Cantonese. I went to high school in Southern California. Then, I finished my bachelor's degree in Chemistry at Purdue University in 2021. I am currently a master student majoring Biostatistics at Columbia University. During my free time, I enjoy cooking, gardening and watching anime ; )
+Let me introduce myself briefly: Born in Guangzhou, China, I can speak both Mandarin and Cantonese. I went to high school in Southern California. Then, I finished my bachelor's degree in Chemistry at Purdue University in 2021. I am currently a master student majoring Biostatistics at Columbia University. During my free time, I enjoy cooking, doing gardening and watching anime ; )
 
 
 # More about me
@@ -19,6 +21,13 @@ Clicks the links below or the icons on the top right of the page to learn more a
 * [Resume](resume.html)
 * [GitHub](https://github.com/lscelia)
 * [Linkedin](https://www.linkedin.com/in/lesi-he-1234a6125/)
+
+
+# Plotly
+Here are some plot examples using plotly!
+
+* [Plotly](plotly.html)
+* [Plotly on Dashboard](dashboard.html)
 
 
 

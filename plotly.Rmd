@@ -1,0 +1,86 @@
+---
+title: "plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+# Examples pf plotly
+
+We are going to look at the Instacart from the p8105.datasets pakage.
+
+```{r}
+#import library
+library(tidyverse)
+library("p8105.datasets")
+library(plotly)
+```
+
+```{r}
+#load dataset
+data("ny_noaa")
+
+#tidy data
+noaa_df = 
+  ny_noaa %>% 
+  #drop na values
+  drop_na() %>% 
+  #extrat year and month from the date column
+  mutate(year = format(date, format = "%Y"),
+         month = format(date, format = "%m"))
+```
+
+# Scatter plot
+```{r}
+noaa_df %>% 
+  #group dataset by year
+  group_by(year) %>% 
+  #find the average snowfall for each year
+  summarise(mean = mean(snow)) %>% 
+  #create line plot
+  plot_ly(x = ~year, y = ~mean,type = "scatter", mode = "line") %>% 
+  #edit title, x/y axis title
+  layout(title = "Average Snowfall in Different Years in NY", 
+         xaxis = list(title = "Year"),
+         yaxis = list(title = "Average Snowfall (mm)"))
+```
+
+
+
+
+# Barplot
+```{r}
+noaa_df %>% 
+  #filter the year
+  filter(year == "1981") %>%
+  #group data by month
+  group_by(month) %>% 
+  #find the mean of precipitation
+  summarise(mean = mean(prcp)) %>% 
+  #create bar plot
+  plot_ly(x = ~month, y = ~mean, type = "bar", colors = "viridis") %>% 
+  #edit title, x/y axis title
+  layout(title = "Average Precipitation in Different Months in 1981 in NY", 
+         xaxis = list(title = "Month"),
+         yaxis = list(title = "Average Precipitation (tenths of mm)"))
+```
+
+# Boxplot
+```{r}
+noaa_df %>% 
+  #randomly select 2000 data points
+  sample_n(3000) %>% 
+  #calculate temperature range
+  mutate(t_range = as.numeric(tmax) - as.numeric(tmin)) %>% 
+  #plot boxplot showing temperature range for each year
+  plot_ly(x = ~year, y = ~t_range, type = "box", colors = "viridis") %>% 
+  #edit title, x/y axis title
+  layout(title = "Temperature Range for each Year in NY",
+         xaxis = list(title = "Year"),  
+         yaxis = list(title = "Temperature Range (tenths of degree C)"))
+```
+
+
+
