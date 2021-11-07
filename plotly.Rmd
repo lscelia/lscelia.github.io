@@ -1,5 +1,5 @@
 ---
-title: "plotly"
+title: "Plotly"
 output: 
   html_document:
     toc: true
@@ -11,7 +11,7 @@ output:
 
 We are going to look at the Instacart from the p8105.datasets pakage.
 
-```{r}
+```{r, message = FALSE}
 #import library
 library(tidyverse)
 library("p8105.datasets")
@@ -32,7 +32,7 @@ noaa_df =
          month = format(date, format = "%m"))
 ```
 
-# Scatter plot
+# Line plot
 ```{r}
 noaa_df %>% 
   #group dataset by year
